@@ -1,22 +1,116 @@
-.App {
-  text-align: center;
+h1 {
+  font-size: 48px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 > img {
+  width: 100px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.combo-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.combo-banner > p,
+.combo-banner > div {
+  max-width: 300px;
+  min-width: 250px;
+  flex: 1;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.special-deal {
+  display: flex;
+}
+
+.special-deal-star {
+  position: relative;
+  color: red;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.special-deal-star:before {
+  content: '\2605'; /* the star symbol */
+  position: absolute;
+  font-size: 70px;
+  top: -32px;
+  left: -15px;
+  transform: rotate(10deg);
+  color: #e1cb55;
+  z-index: -1;
+}
+
+.menu-item {
+  box-shadow: 0 2px 5px grey;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-basis: 400px;
+  margin: 15px;
+  background: rgb(253, 253, 253, 0.7);
+}
+
+.menu-item > img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.menu-item:before {
+  counter-increment: item-number;
+  content: counter(item-number);
+  color: white;
+  background: black;
+  border-radius: 100%;
+  padding: 5px 10px;
+  align-self: center;
+  margin-left: -35px;
+  margin-right: 10px;
+}
+
+.red {
+  color: red;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1000px;
+  counter-reset: item-number;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+dd {
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.varsity-logo {
+  position: absolute;
+  width: 100px;
+  top: 30px;
+  right: 30px;
+  border-radius: 10px;
 }
