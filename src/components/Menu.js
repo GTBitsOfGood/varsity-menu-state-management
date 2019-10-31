@@ -42,6 +42,7 @@ const menuItems = [
 ]
 
 function Menu() {
+  const [purchasedItems, setPurchasedItems] = React.useState([])
   return (
     <section>
       <dl>
@@ -55,7 +56,7 @@ function Menu() {
           )
         })}
       </dl>
-      <Receipt purchasedItems={[]} />
+      <Receipt purchasedItems={purchasedItems} />
     </section>
   )
 }
