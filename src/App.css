@@ -110,6 +110,10 @@ button.show-receipt {
   background: rgb(253, 253, 253, 0.7);
 }
 
+.menu-item.selected {
+  background-color: yellow;
+}
+
 .menu-item > img {
   width: 60px;
   height: 60px;
