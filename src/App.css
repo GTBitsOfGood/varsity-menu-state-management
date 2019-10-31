@@ -17,6 +17,50 @@ p {
   font-size: 24px;
 }
 
+button.show-receipt {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.receipt {
+  background: white;
+  position: fixed;
+  top: 100vh;
+  height: 70vh;
+  left: 20vw;
+  right: 20vw;
+  padding: 10px 30px;
+  transition: transform 0.3s;
+  z-index: 9;
+  box-shadow: 0 0 10px grey;
+}
+
+.receipt > h2 {
+  text-align: center;
+  color: red;
+  font-size: 36px;
+}
+
+.receipt-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.receipt-item > dt,
+.receipt-item > dd {
+  font-size: 26px;
+}
+
+.receipt.showing {
+  transform: translateY(-70vh);
+}
+
 .combo-banner {
   display: flex;
   flex-wrap: wrap;

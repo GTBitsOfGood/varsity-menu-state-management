@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuItem from './MenuItem'
+import Receipt from './Receipt'
 
 const menuItems = [
   {
@@ -42,17 +43,20 @@ const menuItems = [
 
 function Menu() {
   return (
-    <dl>
-      {menuItems.map(menuItem => {
-        return (
-          <MenuItem
-            name={menuItem.name}
-            price={menuItem.price}
-            picture={menuItem.picture}
-          />
-        )
-      })}
-    </dl>
+    <section>
+      <dl>
+        {menuItems.map(menuItem => {
+          return (
+            <MenuItem
+              name={menuItem.name}
+              price={menuItem.price}
+              picture={menuItem.picture}
+            />
+          )
+        })}
+      </dl>
+      <Receipt purchasedItems={[]} />
+    </section>
   )
 }
 
