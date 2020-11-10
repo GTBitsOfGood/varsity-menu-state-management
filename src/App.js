@@ -1,8 +1,8 @@
-import React from 'react'
-import './App.css'
-import ComboBanner from './components/ComboBanner'
-import Header from './components/Header'
-import Menu from './components/Menu'
+import React from "react";
+import "./App.css";
+import ComboBanner from "./components/ComboBanner";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <ComboBanner />
       <Menu />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
